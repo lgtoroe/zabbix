@@ -46,9 +46,11 @@ if [[ -n "$profile" ]]; then
 		wget -o  /etc/zabbix/zabbix_agentd.conf https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix_agentd.K8s.conf
 	####	mv zabbix_agentd.K8s.conf /etc/zabbix/zabbix_agentd.conf  <-- Remove ... move into wget
 else
-	wget -o /etc/zabbix/zabbix_agentd.conf https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix_agentd.conf
+	wget -O /etc/zabbix/zabbix_agentd.conf https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix_agentd.conf
 fi
 
 service zabbix-agent restart
 sudo chmod 755 /etc/init.d/zabbix-agent
 sudo update-rc.d zabbix-agent defaults
+
+exit
