@@ -6,7 +6,7 @@ Repo for Zabbix installer Server and Agent scripts/YAML for K8s Deploy for Serve
 
 Execute Agent in Ubuntu 16.04 LTS (First commit ... after multiplattforms)
 
-bash <(https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix-agent-installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix-agent-installer.sh)
 
 or
 
