@@ -45,6 +45,7 @@ if [[ -n "$profile" ]]; then
 	if [ "$profile" == "K8s" ]; then 
 		wget -O  /etc/zabbix/zabbix_agentd.conf https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix_agentd.K8s.conf
 	####	mv zabbix_agentd.K8s.conf /etc/zabbix/zabbix_agentd.conf  <-- Remove ... move into wget
+    fi
 else
 	wget -O /etc/zabbix/zabbix_agentd.conf https://raw.githubusercontent.com/lgtoroe/zabbix/master/zabbix_agentd.conf
 fi
