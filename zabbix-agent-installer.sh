@@ -32,12 +32,12 @@ fi
 
 # Perform the Zabbix agent configuration process
 
-if [ -d /etc/zabbix/old ]; then
+if [ ! -d /etc/zabbix/old ]; then
 	mkdir /etc/zabbix/old
 fi
 
 if [ -f /etc/zabbix/zabbix_agent*.conf ]; then 
-	mv /etc/zabbix/zabbix_agent*.conf /etc/agent/old
+	mv /etc/zabbix/zabbix_agent*.conf /etc/zabbix/old
 fi
 
 # We can put a IF sentence for %1 execute differents profiles example K8s .... 
