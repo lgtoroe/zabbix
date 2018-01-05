@@ -55,3 +55,5 @@ sudo chmod 755 /etc/init.d/zabbix-agent
 sudo update-rc.d zabbix-agent defaults
 
 exit
+
+# End Bash Script
